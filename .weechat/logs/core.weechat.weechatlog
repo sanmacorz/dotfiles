@@ -1,0 +1,114 @@
+2021-06-23 23:11:12		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2021-06-23 23:11:12		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2021-06-23 23:11:12		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2021-06-23 23:11:12		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2021-06-23 23:11:12		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2021-06-23 23:11:12		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2021-06-23 23:11:12		New key binding (context "default"): meta-B => /buflist toggle
+2021-06-23 23:11:12		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2021-06-23 23:11:12		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2021-06-23 23:11:12		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2021-06-23 23:11:12		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2021-06-23 23:11:12		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2021-06-23 23:11:12		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2021-06-23 23:11:12		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2021-06-23 23:11:12		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2021-06-23 23:11:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-06-23 23:11:32		[irc]  /server  list|listfull [<name>]
+2021-06-23 23:11:32		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-06-23 23:11:32		                copy|rename <name> <new_name>
+2021-06-23 23:11:32		                reorder <name> [<name>...]
+2021-06-23 23:11:32		                open <name>|-all [<name>...]
+2021-06-23 23:11:32		                del|keep <name>
+2021-06-23 23:11:32		                deloutq|jump
+2021-06-23 23:11:32		                raw [<filter>]
+2021-06-23 23:11:32		list, add or remove IRC servers
+2021-06-23 23:11:32		    list: list servers (without argument, this list is displayed)
+2021-06-23 23:11:32		listfull: list servers with detailed info for each server
+2021-06-23 23:11:32		     add: add a new server
+2021-06-23 23:11:32		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-06-23 23:11:32		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-06-23 23:11:32		   -temp: add a temporary server (not saved)
+2021-06-23 23:11:32		  option: set option for server (for boolean option, value can be omitted)
+2021-06-23 23:11:32		nooption: set boolean option to 'off' (for example: -nossl)
+2021-06-23 23:11:32		    copy: duplicate a server
+2021-06-23 23:11:32		  rename: rename a server
+2021-06-23 23:11:32		 reorder: reorder list of servers
+2021-06-23 23:11:32		    open: open the server buffer without connecting
+2021-06-23 23:11:32		    keep: keep server in config file (for temporary servers only)
+2021-06-23 23:11:32		     del: delete a server
+2021-06-23 23:11:32		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-06-23 23:11:32		    jump: jump to server buffer
+2021-06-23 23:11:32		     raw: open buffer with raw IRC data
+2021-06-23 23:11:32		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-06-23 23:11:32		            *       show all messages (no filter)
+2021-06-23 23:11:32		            xxx     show only messages containing "xxx"
+2021-06-23 23:11:32		            s:xxx   show only messages for server "xxx"
+2021-06-23 23:11:32		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-06-23 23:11:32		            m:xxx   show only IRC command "xxx"
+2021-06-23 23:11:32		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-06-23 23:11:32		Examples:
+2021-06-23 23:11:32		  /server listfull
+2021-06-23 23:11:32		  /server add freenode chat.freenode.net
+2021-06-23 23:11:32		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2021-06-23 23:11:32		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-06-23 23:11:32		  /server copy freenode freenode-test
+2021-06-23 23:11:32		  /server rename freenode-test freenode2
+2021-06-23 23:11:32		  /server reorder freenode2 freenode
+2021-06-23 23:11:32		  /server del freenode
+2021-06-23 23:11:32		  /server deloutq
+2021-06-23 23:11:32		  /server raw
+2021-06-23 23:11:32		  /server raw s:freenode
+2021-06-23 23:11:32		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-06-29 18:27:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2021-06-29 18:29:00		[core]
+2021-06-29 18:29:00		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2021-06-29 18:29:00		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2021-06-29 18:29:00		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2021-06-29 18:29:00		[fset]
+2021-06-29 18:29:00		  fset
+2021-06-29 18:29:00		[perl]
+2021-06-29 18:29:00		  perl
+2021-06-29 18:29:00		[lua]
+2021-06-29 18:29:00		  lua
+2021-06-29 18:29:00		[fifo]
+2021-06-29 18:29:00		  fifo
+2021-06-29 18:29:00		[exec]
+2021-06-29 18:29:00		  exec
+2021-06-29 18:29:00		[tcl]
+2021-06-29 18:29:00		  tcl
+2021-06-29 18:29:00		[relay]
+2021-06-29 18:29:00		  relay
+2021-06-29 18:29:00		[alias]
+2021-06-29 18:29:00		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2021-06-29 18:29:00		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2021-06-29 18:29:00		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2021-06-29 18:29:00		[logger]
+2021-06-29 18:29:00		  logger
+2021-06-29 18:29:00		[irc]
+2021-06-29 18:29:00		  admin       cycle       ignore      links       names       pong        sajoin      squery      unquiet     whois     
+2021-06-29 18:29:00		  allchan     dcc         info        list        nick        query       samode      squit       userhost    whowas    
+2021-06-29 18:29:00		  allpv       dehalfop    invite      lusers      notice      quiet       sanick      stats       users     
+2021-06-29 18:29:00		  allserv     deop        ison        map         notify      quote       sapart      summon      version   
+2021-06-29 18:29:00		  ban         devoice     join        me          op          reconnect   saquit      time        voice     
+2021-06-29 18:29:00		  cap         die         kick        mode        oper        rehash      server      topic       wallchops 
+2021-06-29 18:29:00		  connect     disconnect  kickban     motd        part        remove      service     trace       wallops   
+2021-06-29 18:29:00		  ctcp        halfop      kill        msg         ping        restart     servlist    unban       who       
+2021-06-29 18:29:00		[xfer]
+2021-06-29 18:29:00		  me  xfer
+2021-06-29 18:29:00		[script]
+2021-06-29 18:29:00		  script
+2021-06-29 18:29:00		[charset]
+2021-06-29 18:29:00		  charset
+2021-06-29 18:29:00		[ruby]
+2021-06-29 18:29:00		  ruby
+2021-06-29 18:29:00		[guile]
+2021-06-29 18:29:00		  guile
+2021-06-29 18:29:00		[trigger]
+2021-06-29 18:29:00		  trigger
+2021-06-29 18:29:00		[python]
+2021-06-29 18:29:00		  python
+2021-06-29 18:29:00		[buflist]
+2021-06-29 18:29:00		  buflist
+2021-06-29 18:29:00		[spell]
+2021-06-29 18:29:00		  spell
