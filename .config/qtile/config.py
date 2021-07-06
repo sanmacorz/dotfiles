@@ -1,78 +1,120 @@
-#Background = "#282a36"
-#Current Line = "#44475a"
-#Selection = "#44475a"
-#Foreground = "#f8f8f2"
-#Comment = "#6272a4"
-#Cyan = "#8be9fd"
-#Green = "#50fa7b"
-#Orange = "#ffb86c"
-#Pink = "#ff79c6"
-#Purple = "#bd93f9"
-#Red = "#ff5555"
-#Yellow = "#f1fa8c"
-
 import os
 import subprocess
+from pathlib import Path
+from time import time
 from typing import List
 from libqtile import bar, layout, widget, qtile, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
+from libqtile.command import lazy
+
 
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.call([home])
 
+
+def screenshot(save=True, copy=True):
+    def file(qtile):
+        path = Path.home() / 'Pictures' / 'Screenshots'
+        path /= f'{str(int(time() * 100))}.png'
+        shot = subprocess.run(['maim'], stdout=subprocess.PIPE)
+
+        if save:
+            with open(path, 'wb') as sc:
+                sc.write(shot.stdout)
+
+        if copy:
+            subprocess.run(['xclip', '-selection', 'clipboard', '-t',
+                            'image/png'], input=shot.stdout)
+    return file
+
+
+def screenshot_selection(save=True, copy=True):
+    def file(qtile):
+        path = Path.home() / 'Pictures' / 'Screenshots'
+        path /= f'{str(int(time() * 100))}.png'
+        shot = subprocess.run(['maim', '--select'], stdout=subprocess.PIPE)
+
+        if save:
+            with open(path, 'wb') as sc:
+                sc.write(shot.stdout)
+
+        if copy:
+            subprocess.run(['xclip', '-selection', 'clipboard', '-t',
+                            'image/png'], input=shot.stdout)
+    return file
+
+
 mod = "mod1"
 terminal = "alacritty"
+browser = "brave"
+file_manager = "pcmanfm"
+
+background = "#282a36"
+current_line = "#44475a"
+selection = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
+cyan = "#8be9fd"
+green = "#50fa7b"
+orange = "#ffb86c"
+pink = "#ff79c6"
+purple = "#bd93f9"
+red = "#ff5555"
+yellow = "#f1fa8c"
 
 keys = [
-    Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
-    Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
-    Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
-    Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
-    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
-    Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
-    Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-    Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod, "shift"], "c", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod], "p", lazy.spawn("rofi -show run"), desc="Launch rofi in run mode"),
-    Key([mod, "shift"], "q", lazy.spawn("rofi -show power-menu -modi power-menu:rofi-power-menu"), desc="Launch rofi in power menu mode"), 
-    Key([mod], "Right", lazy.spawn("sudo echo $((VALUE + 5)) > /sys/class/backlight/amdgpu_bl0/brightness"), desc="Increase the backlight of the screen"),
-    Key([mod], "Left", lazy.spawn("sudo echo $((VALUE - 5)) > /sys/class/backlight/amdgpu_bl0/brightness"), desc="Decrease the backlight of the screen")
-    # XF86MonBrightnessUp
-    # XF86MonBrightnessDown
+    Key([mod], "h", lazy.layout.left()),
+    Key([mod], "l", lazy.layout.right()),
+    Key([mod], "j", lazy.layout.down()),
+    Key([mod], "k", lazy.layout.up()),
+    Key([mod], "space", lazy.layout.next()),
+    Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
+    Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
+    Key([mod, "control"], "l", lazy.spawn("dm-tool switch-to-greeter")),
+    Key([mod], "Return", lazy.spawn(terminal)),
+    Key([mod], "Tab", lazy.next_layout()),
+    Key([mod, "shift"], "c", lazy.window.kill()),
+    Key([mod, "control"], "r", lazy.restart()),
+    Key([mod], "p", lazy.spawn("rofi -show run")),
+    Key([mod, "shift"], "q", lazy.spawn(
+        "rofi -show power-menu -modi power-menu:rofi-power-menu")),
+    Key([mod], "XF86MonBrightnessUp", lazy.spawn(
+        "sudo echo $((VALUE + 5)) > /sys/class/backlight/amdgpu_bl0/brightness")),
+    Key([mod], "XF86MonBrightnessDown", lazy.spawn(
+        "sudo echo $((VALUE - 5)) > /sys/class/backlight/amdgpu_bl0/brightness")),
+    Key([mod], "b", lazy.spawn(browser)),
+    Key([], 'Print', lazy.function(screenshot())),
+    Key(['shift'], 'Print', lazy.function(screenshot_selection())),
 ]
 
-group_names = '       響  '.split()
-groups = [Group(name, layout='max') for name in group_names]
+groups = [Group(i) for i in "12345"]
 
-for i, name in enumerate(group_names):
-    indx = str(i + 1)
-    keys += [
-        Key([mod], indx, lazy.group[name].toscreen()),
-        Key([mod, 'shift'], indx, lazy.window.togroup(name))]
+for i in groups:
+    keys.extend([
+        Key([mod], i.name, lazy.group[i.name].toscreen(),
+            desc="Switch to group {}".format(i.name)),
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
+            desc="Switch to & move focused window to group {}".format(i.name)),
+    ])
+
+layout_theme = {"border_width": 3,
+                "margin": 10,
+                "border_focus": "EA92E1",
+                "border_normal": "959dcb"}
 
 layouts = [
-    layout.Tile(border_focus="#ffffff"),
-    layout.Max()
+    layout.Tile(**layout_theme),
+    layout.Max(**layout_theme)
 ]
 
 widget_defaults = dict(
-    font='UbuntuMono Nerd Font Mono',
-    fontsize=16,
+    font='sans',
+    fontsize=12,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -81,17 +123,114 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.GroupBox(fontsize=30),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(chords_colors={'launch': ("#ff0000", "#ffffff"),}, name_transform=lambda name:name.upper(),),
-		        widget.CPU(format=" {load_percent}%"),
-                widget.Memory(),
-                widget.BatteryIcon(),
-                widget.Systray(),
-                widget.Clock(format="%d/%m/%Y %I:%M %p"),
+                widget.GroupBox(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    highlight_method="block",
+                    rounded=True,
+                    padding_x=4,
+                    padding_y=1,
+                    active="#ffffff",
+                    inactive="#585858",
+                    this_current_screen_border="5fb8d1",
+                    urgent_border="c04a55",
+                    disable_drag=True,
+                    margin_x=5,
+                    spacing=10
+                ),
+                widget.Sep(
+                    linewidth=0,
+                    padding=10
+                ),
+                widget.Prompt(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="fd971f"
+                ),
+                widget.WindowName(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    format="[ {name} ]",
+                    max_chars=50,
+                    foreground="5fb8d1"
+                ),
+                widget.Spacer(),
+                widget.Systray(
+                ),
+                widget.TextBox(
+                    text="│",
+                    fontsize=14,
+                    padding=5,
+                    foreground="ffffff"
+                ),
+                widget.TextBox(
+                    text="  ",
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="c04a55"
+                ),
+                widget.CPU(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="ffffff",
+                    format="CPU {load_percent}%"
+                ),
+                widget.TextBox(
+                    text="  ",
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="84be53"
+                ),
+                widget.Memory(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="ffffff",
+                    format="{MemUsed: } /{MemTotal: } MB"
+                ),
+                widget.TextBox(
+                    text="  ",
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="5fb8d1"
+                ),
+                widget.PulseVolume(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="ffffff"
+                ),
+                widget.Battery(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="ffffff",
+                    unknown_char="",
+                    charge_char="   ",
+                    full_char=" ",
+                    discharge_char="    ",
+                    low_foreground="fd971f",
+                    low_percentage=0.30,
+                    format="{char} {percent:2.0%}"
+                ),
+                widget.TextBox(
+                    text="  ",
+                    font="SF Pro Display",
+                    fontsize=18,
+                    foreground="cd4eb6"
+                ),
+                widget.Clock(
+                    font="SF Pro Display",
+                    fontsize=18,
+                    format="%d/%m/%Y    %I:%M:%S",
+                    foreground="ffffff"
+                ),
+                widget.Sep(
+                    linewidth=0,
+                    padding=10
+                )
             ],
-            24,
+            30,
+            background="#20232a",
+            opacity=1,
+            margin=[0, 0, 0, 0]
         ),
     ),
 ]
@@ -116,7 +255,7 @@ floating_layout = layout.Floating(float_rules=[
 ])
 
 dgroups_key_binder = None
-dgroups_app_rules = []  # type: List
+dgroups_app_rules = []
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
