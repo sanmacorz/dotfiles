@@ -2,8 +2,7 @@ import os
 import subprocess
 from pathlib import Path
 from time import time
-from typing import List
-from libqtile import bar, layout, widget, qtile, hook
+from libqtile import bar, layout, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.command import lazy
@@ -15,35 +14,44 @@ def autostart():
     subprocess.call([home])
 
 
-def screenshot(save=True, copy=True):
+def screenshot(save=True, copy=True, selection=None, full=None):
     def file(qtile):
-        path = Path.home() / 'Pictures' / 'Screenshots'
-        path /= f'{str(int(time() * 100))}.png'
-        shot = subprocess.run(['maim'], stdout=subprocess.PIPE)
-
+        if full:
+            path = Path.home() / 'Pictures' / 'Screenshots'
+            path /= f'{str(int(time() * 100))}.png'
+            shot = subprocess.run(['maim'], stdout=subprocess.PIPE)
+        if selection:
+            path = Path.home() / 'Pictures' / 'Screenshots'
+            path /= f'{str(int(time() * 100))}.png'
+            shot = subprocess.run(['maim', '--select'], stdout=subprocess.PIPE)
         if save:
             with open(path, 'wb') as sc:
                 sc.write(shot.stdout)
-
         if copy:
             subprocess.run(['xclip', '-selection', 'clipboard', '-t',
                             'image/png'], input=shot.stdout)
     return file
 
 
-def screenshot_selection(save=True, copy=True):
+def brightness(state):
     def file(qtile):
-        path = Path.home() / 'Pictures' / 'Screenshots'
-        path /= f'{str(int(time() * 100))}.png'
-        shot = subprocess.run(['maim', '--select'], stdout=subprocess.PIPE)
-
-        if save:
-            with open(path, 'wb') as sc:
-                sc.write(shot.stdout)
-
-        if copy:
-            subprocess.run(['xclip', '-selection', 'clipboard', '-t',
-                            'image/png'], input=shot.stdout)
+        file = open("/sys/class/backlight/amdgpu_bl0/brightness", "r")
+        value = int(file.read())
+        if state == "up":
+            if value > 250:
+                pass
+            else:
+                value = (value + 5)
+        elif state == "down":
+            if value < 5:
+                pass
+            else:
+                value = (value - 5)
+        else:
+            pass
+        file = open("/sys/class/backlight/amdgpu_bl0/brightness", "w")
+        file.write(str(value))
+        file.close()
     return file
 
 
@@ -52,18 +60,18 @@ terminal = "alacritty"
 browser = "brave"
 file_manager = "pcmanfm"
 
-background = "#282a36"
-current_line = "#44475a"
-selection = "#44475a"
-foreground = "#f8f8f2"
-comment = "#6272a4"
-cyan = "#8be9fd"
-green = "#50fa7b"
-orange = "#ffb86c"
-pink = "#ff79c6"
-purple = "#bd93f9"
-red = "#ff5555"
-yellow = "#f1fa8c"
+# background = "#282a36"
+# current_line = "#44475a"
+# selection = "#44475a"
+# foreground = "#f8f8f2"
+# comment = "#6272a4"
+# cyan = "#8be9fd"
+# green = "#50fa7b"
+# orange = "#ffb86c"
+# pink = "#ff79c6"
+# purple = "#bd93f9"
+# red = "#ff5555"
+# yellow = "#f1fa8c"
 
 keys = [
     Key([mod], "h", lazy.layout.left()),
@@ -80,19 +88,18 @@ keys = [
     Key([mod], "Tab", lazy.next_layout()),
     Key([mod, "shift"], "c", lazy.window.kill()),
     Key([mod, "control"], "r", lazy.restart()),
-    Key([mod], "p", lazy.spawn("rofi -show run")),
+    Key([mod], "p", lazy.spawn("rofi -show drun")),
     Key([mod, "shift"], "q", lazy.spawn(
         "rofi -show power-menu -modi power-menu:rofi-power-menu")),
-    Key([mod], "XF86MonBrightnessUp", lazy.spawn(
-        "sudo echo $((VALUE + 5)) > /sys/class/backlight/amdgpu_bl0/brightness")),
-    Key([mod], "XF86MonBrightnessDown", lazy.spawn(
-        "sudo echo $((VALUE - 5)) > /sys/class/backlight/amdgpu_bl0/brightness")),
+    Key([mod], "Right", lazy.function(brightness("up"))),
+    Key([mod], "Left", lazy.function(brightness("down"))),
     Key([mod], "b", lazy.spawn(browser)),
-    Key([], 'Print', lazy.function(screenshot())),
-    Key(['shift'], 'Print', lazy.function(screenshot_selection())),
+    Key(['shift'], 'Print', lazy.function(
+        screenshot(selection=False, full=True))),
+    Key([], 'Print', lazy.function(screenshot(selection=True, full=False))),
 ]
 
-groups = [Group(i) for i in "12345"]
+groups = [Group(i) for i in "123456"]
 
 for i in groups:
     keys.extend([
@@ -104,8 +111,8 @@ for i in groups:
 
 layout_theme = {"border_width": 3,
                 "margin": 10,
-                "border_focus": "EA92E1",
-                "border_normal": "959dcb"}
+                "border_focus": "#ff79c6",
+                "border_normal": "#8be9fd"}
 
 layouts = [
     layout.Tile(**layout_theme),
@@ -130,10 +137,10 @@ screens = [
                     rounded=True,
                     padding_x=4,
                     padding_y=1,
-                    active="#ffffff",
-                    inactive="#585858",
-                    this_current_screen_border="5fb8d1",
-                    urgent_border="c04a55",
+                    active="#f8f8f2",
+                    inactive="#44475a",
+                    this_current_screen_border="#6272a4",
+                    urgent_border="#ff79c6",
                     disable_drag=True,
                     margin_x=5,
                     spacing=10
@@ -142,69 +149,64 @@ screens = [
                     linewidth=0,
                     padding=10
                 ),
-                widget.Prompt(
-                    font="SF Pro Display",
-                    fontsize=18,
-                    foreground="fd971f"
-                ),
                 widget.WindowName(
                     font="SF Pro Display",
                     fontsize=18,
                     format="[ {name} ]",
-                    max_chars=50,
-                    foreground="5fb8d1"
+                    max_chars=100,
+                    foreground="#f8f8f2",
+                    background="#6272a4"
                 ),
                 widget.Spacer(),
-                widget.Systray(
-                ),
+                widget.Systray(),
                 widget.TextBox(
                     text="│",
                     fontsize=14,
                     padding=5,
-                    foreground="ffffff"
+                    foreground="#f8f8f2"
                 ),
                 widget.TextBox(
-                    text="  ",
+                    text="",
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="c04a55"
+                    foreground="#ff5555"
                 ),
                 widget.CPU(
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="ffffff",
+                    foreground="#f8f8f2",
                     format="CPU {load_percent}%"
                 ),
                 widget.TextBox(
                     text="  ",
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="84be53"
+                    foreground="#50fa7b"
                 ),
                 widget.Memory(
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="ffffff",
+                    foreground="#f8f8f2",
                     format="{MemUsed: } /{MemTotal: } MB"
                 ),
                 widget.TextBox(
                     text="  ",
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="5fb8d1"
+                    foreground="#8be9fd"
                 ),
                 widget.PulseVolume(
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="ffffff"
+                    foreground="#f8f8f2"
                 ),
                 widget.Battery(
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="ffffff",
-                    unknown_char="",
+                    foreground="#f8f8f2",
+                    unknown_char="    ",
                     charge_char="   ",
-                    full_char=" ",
+                    full_char="   ",
                     discharge_char="    ",
                     low_foreground="fd971f",
                     low_percentage=0.30,
@@ -214,13 +216,13 @@ screens = [
                     text="  ",
                     font="SF Pro Display",
                     fontsize=18,
-                    foreground="cd4eb6"
+                    foreground="#ff79c6"
                 ),
                 widget.Clock(
                     font="SF Pro Display",
                     fontsize=18,
-                    format="%d/%m/%Y    %I:%M:%S",
-                    foreground="ffffff"
+                    format="%d/%m/%Y    %I:%M:%S %p",
+                    foreground="#f8f8f2"
                 ),
                 widget.Sep(
                     linewidth=0,
@@ -228,7 +230,7 @@ screens = [
                 )
             ],
             30,
-            background="#20232a",
+            background="#282a36",
             opacity=1,
             margin=[0, 0, 0, 0]
         ),
@@ -255,7 +257,6 @@ floating_layout = layout.Floating(float_rules=[
 ])
 
 dgroups_key_binder = None
-dgroups_app_rules = []
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
