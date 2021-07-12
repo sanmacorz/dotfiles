@@ -89,8 +89,7 @@ keys = [
     Key([mod, "shift"], "c", lazy.window.kill()),
     Key([mod, "control"], "r", lazy.restart()),
     Key([mod], "p", lazy.spawn("rofi -show drun")),
-    Key([mod, "shift"], "q", lazy.spawn(
-        "rofi -show power-menu -modi power-menu:rofi-power-menu")),
+    Key([mod, "shift"], "q", lazy.spawn("rofi -show power-menu -modi power-menu:/home/santiago/.local/bin/rofi-power-menu")),
     Key([mod], "Right", lazy.function(brightness("up"))),
     Key([mod], "Left", lazy.function(brightness("down"))),
     Key([mod], "b", lazy.spawn(browser)),
@@ -115,8 +114,9 @@ layout_theme = {"border_width": 3,
                 "border_normal": "#8be9fd"}
 
 layouts = [
-    layout.Tile(**layout_theme),
-    layout.Max(**layout_theme)
+    layout.Tile(**layout_theme, ratio=0.5),
+    layout.Max(**layout_theme),
+    layout.Floating(**layout_theme)
 ]
 
 widget_defaults = dict(

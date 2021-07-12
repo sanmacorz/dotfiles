@@ -14,3 +14,6 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 # Open pftech at startup
 pfetch
+
+# Add to PATH
+export PATH="/home/santiago/.local/bin:$PATH"
