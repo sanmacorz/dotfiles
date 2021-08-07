@@ -23,10 +23,10 @@
 # https://wiki.archlinux.org/title/MAC_address_spoofing
 
 # Installing the regular repos packages
-sudo pacman -S --noconfirm git vim nano neovim nvidia nvidia-dkms picom nitrogen xorg xterm qtile rofi alacritty sxiv ranger texlive-most texlive-lang pcmanfm polkit lxsession volumeicon network-manager-applet dunst lightdm lxappearance xclip dmenu cmatrix nerd-fonts neofetch bpytop redshift xcalib gimp krita digikam darktable discord lmms ardour xorg-xrandr xorg-xcalc xorg-xeyes xorg-xclock graphviz xorg-server-xephyr net-tools okular gwenview libreoffice zathura newsboat mpd ncmpcpp mpc bash fish zsh tmux bluez bluez-utils pulseaudio-bluetooth pavucontrol asciiquarium flac ffmpeg timeshift kdenlive telegram-desktop pidgin weechat mpv vlc mixxx audacity feh imagemagick xorg xdg-utils bash sed blueman xorg-xbacklight alsa-utils pulseaudio python-pywal redshift pulsemixer calcurse
+sudo pacman -S --noconfirm --needed - < regular-packages.txt
 
 # Installing the AUR repo packages
-yay -S --noconfirm cbonsai optimus-manager optimus-manager-qt minecraft-launcher lightdm-webkit2-greeter lightdm-webkit-theme-aether cava
+yay -S --noconfirm --needed - < aur-packages.txt
 
 # Installing the Starship shell prompt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"

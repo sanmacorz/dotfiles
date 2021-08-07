@@ -1,6 +1,8 @@
-#
-# ~/.bashrc
-#
+#  _               _
+# | |__   __ _ ___| |__  _ __ ___
+# | '_ \ / _` / __| '_ \| '__/ __|
+# | |_) | (_| \__ \ | | | | | (__
+# |_.__/ \__,_|___/_| |_|_|  \___|
 
 [[ $- != *i* ]] && return
 
@@ -144,3 +146,19 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Initializes the starship prompt.
 eval "$(starship init bash)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/santiago/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/santiago/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/santiago/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/santiago/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

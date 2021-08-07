@@ -5774,3 +5774,348 @@ Jul 23 14:54 : player: played "Hippo Campus/Hippo Campus - Landmark/02 - way it 
 Jul 23 14:57 : player: played "Hippo Campus/Hippo Campus - Landmark/03 - vines.flac"
 Jul 23 15:01 : player: played "Hippo Campus/Hippo Campus - Landmark/04 - epitaph.flac"
 Jul 23 15:02 : player: played "Hippo Campus/Hippo Campus - Landmark/05 - simple season.flac"
+Jul 23 15:08 : player: played "Hippo Campus/Hippo Campus - Landmark/05 - simple season.flac"
+Jul 23 15:11 : player: played "Hippo Campus/Hippo Campus - Landmark/06 - tuesday.flac"
+Jul 23 15:15 : player: played "Hippo Campus/Hippo Campus - Landmark/07 - western kids.flac"
+Jul 23 15:42 : player: played "Hippo Campus/Hippo Campus - Landmark/08 - poems.flac"
+Jul 25 10:51 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/01 - Apocalipsis Virtual.flac"
+Jul 25 10:54 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/02 - Generación Perdida, Diversión Prohibida.flac"
+Jul 25 10:58 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/03 - La Casa del Árbol.flac"
+Jul 25 11:00 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/04 - Gasolina y Mechero.flac"
+Jul 25 11:04 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/05 - Tú No Me Tienes Que Salvar.flac"
+Jul 25 11:08 : player: played "Ecco2k/Ecco2k - E/01 - AAA Powerline.flac"
+Jul 25 11:12 : player: played "Ecco2k/Ecco2k - E/02 - Peroxide.flac"
+Jul 25 11:15 : player: played "Ecco2k/Ecco2k - E/03 - Fragile.flac"
+Jul 25 11:15 : player: played "Ecco2k/Ecco2k - E/04 - Bliss Fields.flac"
+Jul 25 11:16 : player: played "Ecco2k/Ecco2k - E/05 - Fruit Bleed Juice.flac"
+Jul 25 11:19 : player: played "Ecco2k/Ecco2k - E/06 - Cc.flac"
+Jul 25 11:23 : player: played "Ecco2k/Ecco2k - E/07 - Calcium.flac"
+Jul 25 11:26 : player: played "Ecco2k/Ecco2k - E/08 - Sugar & Diesel.flac"
+Jul 25 11:28 : player: played "Ecco2k/Ecco2k - E/09 - Don't Ask.flac"
+Jul 25 12:07 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/01 - Apocalipsis Virtual.flac"
+Jul 25 12:28 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/02 - Generación Perdida, Diversión Prohibida.flac"
+Jul 25 12:32 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/03 - La Casa del Árbol.flac"
+Jul 25 12:35 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/04 - Gasolina y Mechero.flac"
+Jul 25 12:49 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/05 - Tú No Me Tienes Que Salvar.flac"
+Jul 25 13:49 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/05 - Tú No Me Tienes Que Salvar.flac"
+Jul 25 13:54 : player: played "Ecco2k/Ecco2k - E/01 - AAA Powerline.flac"
+Jul 25 13:57 : player: played "Ecco2k/Ecco2k - E/02 - Peroxide.flac"
+Jul 25 14:00 : player: played "Ecco2k/Ecco2k - E/03 - Fragile.flac"
+Jul 25 14:00 : player: played "Ecco2k/Ecco2k - E/04 - Bliss Fields.flac"
+Jul 25 14:02 : player: played "Ecco2k/Ecco2k - E/05 - Fruit Bleed Juice.flac"
+Jul 25 14:04 : player: played "Ecco2k/Ecco2k - E/06 - Cc.flac"
+Jul 25 14:08 : player: played "Ecco2k/Ecco2k - E/07 - Calcium.flac"
+Jul 25 14:10 : exception: Failed to write to /home/santiago/.config/mpd/mpdstate: No space left on device
+Jul 25 14:11 : player: played "Ecco2k/Ecco2k - E/08 - Sugar & Diesel.flac"
+Jul 25 14:14 : player: played "Ecco2k/Ecco2k - E/09 - Don't Ask.flac"
+Jul 25 14:16 : player: played "Ecco2k/Ecco2k - E/10 - Security!.flac"
+Jul 25 14:18 : player: played "Ecco2k/Ecco2k - E/11 - Time.flac"
+Jul 25 14:32 : player: played "Ecco2k/Ecco2k - E/12 - Blue Eyes.flac"
+Jul 25 22:55 : player: played "Ecco2k/Ecco2k - PXE/01 - PXE.flac"
+Jul 26 09:36 : player: played "Depresión Sonora/Depresión Sonora - Depresión Sonora/01 - Hasta Que Llegue la Muerte.flac"
+Jul 26 09:45 : player: played "Depresión Sonora/Depresión Sonora - Depresión Sonora/02 - Mira Mis Ojos.flac"
+Jul 26 09:48 : player: played "Depresión Sonora/Depresión Sonora - Depresión Sonora/03 - Hay Que Abandonar Este Lugar.flac"
+Jul 26 09:51 : player: played "Depresión Sonora/Depresión Sonora - Depresión Sonora/04 - Ya No Hay Verano.flac"
+Jul 26 09:54 : player: played "Depresión Sonora/Depresión Sonora - Depresión Sonora/05 - Dime Que Me Odias.flac"
+Jul 26 12:35 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/01 - Apocalipsis Virtual.flac"
+Jul 27 14:32 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/01 - Apocalipsis Virtual.flac"
+Jul 27 14:36 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/02 - Generación Perdida, Diversión Prohibida.flac"
+Jul 27 14:39 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/03 - La Casa del Árbol.flac"
+Jul 27 14:41 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/04 - Gasolina y Mechero.flac"
+Jul 27 14:45 : player: played "Depresión Sonora/Depresión Sonora - Historias Tristes para Dormir Bien/05 - Tú No Me Tienes Que Salvar.flac"
+Jul 27 14:50 : player: played "Ecco2k/Ecco2k - E/01 - AAA Powerline.flac"
+Jul 27 15:24 : player: played "Ecco2k/Ecco2k - E/02 - Peroxide.flac"
+Jul 27 15:27 : player: played "Ecco2k/Ecco2k - E/03 - Fragile.flac"
+Jul 27 15:27 : player: played "Ecco2k/Ecco2k - E/04 - Bliss Fields.flac"
+Jul 27 15:28 : player: played "Ecco2k/Ecco2k - E/05 - Fruit Bleed Juice.flac"
+Jul 27 15:31 : player: played "Ecco2k/Ecco2k - E/06 - Cc.flac"
+Jul 27 15:52 : player: played "Ed Maverick/Ed Maverick - Nos Queda Mucho Dolor Por Recorrer.flac"
+Jul 27 15:55 : player: played "Ed Maverick/Ed Maverick - Ropa De Bazar.flac"
+Jul 27 15:59 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/01 - quiero (En Vivo).flac"
+Jul 27 16:03 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/02 - tierrita mojada (En Vivo).flac"
+Jul 27 16:10 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/03 - del río (En Vivo).flac"
+Jul 27 16:14 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/04 - wru (donde estás) (En Vivo).flac"
+Jul 27 17:32 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/05 - a mis amigos (En Vivo).flac"
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:51 : update: removing $Not/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:51 : update: removing $Not/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:51 : update: added DeBussy/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:51 : update: added DeBussy/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/06 - Black N White.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/07 - Found.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/01 - Parade.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/08 - Rizla.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/03 - Stranger.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/04 - Numb.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/02 - Devil That I Know.flac
+Jul 27 17:51 : update: added Jacob Banks/Jacob Banks - For My Friends/05 - Too Much.flac
+Jul 27 17:51 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/06 - siempreestoypati (En Vivo).flac"
+Jul 27 17:52 : player: played "Ed Maverick/Ed Maverick - ed maverick en el metropólitan (En Vivo)/07 - vete ya (En Vivo).flac"
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:54 : update: removing DeBussy/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:54 : update: added $not/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:54 : update: added $not/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:54 : update: removing $not/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:54 : update: removing $not/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/08 - MONARCH.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/06 - WHAT'S THE PROBLEM.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/09 - MEGAN.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/01 - YOU KNOW (INTRO).flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/02 - PRESSURE.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/07 - MISTAKE (CHOPPA BOY).flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/10 - BERETTA (feat. Wifisfuneral).flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/05 - ROADRUNNER +.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/04 - Moon & Stars (feat. Maggie Lindemann).flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/11 - GOSHA.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/12 - STRANDED _.flac
+Jul 27 17:54 : update: added $Not/$Not - - TRAGEDY +/03 - FALL IN LOVE.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/04 - Demanding.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/02 - Revenge.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/03 - _Life_.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/10 - Mean.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/11 - Havoc.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/08 - 4.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/12 - Horizon.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/09 - Sangria (feat. Denzel Curry).flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/07 - Toni Braxton.flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/01 - Watch Out (Intro).flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/06 - Like Me (feat. iann dior).flac
+Jul 27 17:54 : update: added $Not/$Not - Beautiful Havoc/05 - Who Do I Trust.flac
+Jul 27 17:56 : player: played "Bon Iver/Bon Iver - Bon Iver/01 - Perth.flac"
+Jul 27 18:00 : player: played "Bon Iver/Bon Iver - Bon Iver/02 - Minnesota, WI.flac"
+Jul 27 18:48 : player: played "LOUTA/LOUTA - 2030/10 - ARGENTINA.flac"
+Jul 27 18:59 : player: played "LOUTA/LOUTA - ENCHASTRE/01 - PUEDE SER.flac"
+Jul 27 19:02 : player: played "LOUTA/LOUTA - ENCHASTRE/02 - PALMERAS.flac"
+Jul 27 19:05 : player: played "LOUTA/LOUTA - ENCHASTRE/03 - TODOS CON EL CELU.flac"
+Jul 27 19:10 : player: played "LOUTA/LOUTA - ENCHASTRE/04 - ABRIR TU CORAZON.flac"
+Jul 27 19:14 : player: played "LOUTA/LOUTA - ENCHASTRE/05 - UACHO (feat. Marilina Bertoldi).flac"
+Jul 27 20:05 : player: played "LOUTA/LOUTA - ENCHASTRE/06 - AYER TE VI (feat. Zoe Gotusso).flac"
+Jul 27 20:07 : player: played "LOUTA/LOUTA - ENCHASTRE/07 - ENCHASTRE.flac"
+Jul 27 20:11 : player: played "LOUTA/LOUTA - ENCHASTRE/08 - SOMOS TAN INTENSOS.flac"
+Jul 27 20:14 : player: played "LOUTA/LOUTA - ENCHASTRE/09 - CUENTITOS.flac"
+Jul 27 20:17 : player: played "LOUTA/LOUTA - ENCHASTRE/10 - CHOCOLATE.flac"
+Jul 27 20:21 : player: played "LOUTA/LOUTA - ENCHASTRE/11 - UN LUGAR ADENTRO.flac"
+Jul 27 20:24 : player: played "LOUTA/LOUTA - Louta/01 - Sigo Sin Entenderte.flac"
+Jul 27 20:26 : player: played "LOUTA/LOUTA - Louta/02 - Felix.flac"
+Jul 27 20:29 : player: played "LOUTA/LOUTA - Louta/03 - Que Bien Que Estoy.flac"
+Jul 27 20:32 : player: played "LOUTA/LOUTA - Louta/04 - Cuadradito de Prensado.flac"
+Jul 27 20:35 : player: played "LOUTA/LOUTA - Louta/05 - Carne.flac"
+Jul 27 20:37 : player: played "LOUTA/LOUTA - Louta/06 - Ponetelo Bien.flac"
+Jul 27 20:40 : player: played "LOUTA/LOUTA - Louta/07 - Alto Uach.flac"
+Jul 27 20:47 : player: played "LOUTA/LOUTA - Louta/08 - Aprieta.flac"
+Jul 27 20:49 : player: played "Luca Bocci/Luca Bocci - 40 Grados/01 - 40 Grados.flac"
+Jul 27 22:15 : player: played "LOUTA/LOUTA - 2030/10 - ARGENTINA.flac"
+Jul 27 22:18 : player: played "LOUTA/LOUTA - ENCHASTRE/01 - PUEDE SER.flac"
+Jul 27 22:22 : player: played "LOUTA/LOUTA - ENCHASTRE/02 - PALMERAS.flac"
+Jul 27 22:39 : player: played "LOUTA/LOUTA - ENCHASTRE/03 - TODOS CON EL CELU.flac"
+Jul 28 10:07 : player: played "LOUTA/LOUTA - ENCHASTRE/03 - TODOS CON EL CELU.flac"
+Jul 28 10:10 : player: played "LOUTA/LOUTA - ENCHASTRE/04 - ABRIR TU CORAZON.flac"
+Jul 28 10:13 : player: played "LOUTA/LOUTA - ENCHASTRE/05 - UACHO (feat. Marilina Bertoldi).flac"
+Jul 28 10:14 : player: played "LOUTA/LOUTA - ENCHASTRE/06 - AYER TE VI (feat. Zoe Gotusso).flac"
+Jul 28 10:18 : player: played "LOUTA/LOUTA - ENCHASTRE/06 - AYER TE VI (feat. Zoe Gotusso).flac"
+Jul 28 10:20 : player: played "LOUTA/LOUTA - ENCHASTRE/07 - ENCHASTRE.flac"
+Jul 28 10:23 : player: played "Pink Guy/Pink Guy - Pink Season/16 - D I C C W E T T 1.flac"
+Jul 28 10:26 : player: played "Pink Guy/Pink Guy - Pink Season/17 - Flex Like David Icke.flac"
+Jul 28 10:28 : player: played "Pink Guy/Pink Guy - Pink Season/18 - High School Blink193.flac"
+Jul 28 10:51 : player: played "Pink Guy/Pink Guy - Pink Season/19 - Rice Balls.flac"
+Jul 28 10:54 : player: played "Pink Guy/Pink Guy - Pink Season/20 - Dora the Explora.flac"
+Jul 28 11:49 : player: played "Pink Guy/Pink Guy - Pink Season/21 - SMD.flac"
+Jul 28 20:04 : player: played "Peach Pit/Peach Pit - Being So Normal/01 - Drop the Guillotine.flac"
+Jul 28 20:08 : player: played "Peach Pit/Peach Pit - Being So Normal/02 - Being so Normal.flac"
+Jul 28 20:12 : player: played "Peach Pit/Peach Pit - Being So Normal/03 - Techno Show.flac"
+Jul 28 20:15 : player: played "Peach Pit/Peach Pit - Being So Normal/04 - Alrighty Aphrodite.flac"
+Jul 28 20:19 : player: played "Peach Pit/Peach Pit - Being So Normal/05 - Chagu's Sideturn.flac"
+Jul 28 20:22 : player: played "Peach Pit/Peach Pit - Being So Normal/06 - Not Me.flac"
+Jul 28 20:26 : player: played "Peach Pit/Peach Pit - Being So Normal/07 - Hot Knifer.flac"
+Jul 28 20:32 : player: played "Peach Pit/Peach Pit - Being So Normal/08 - Private Presley.flac"
+Jul 28 20:38 : player: played "Peach Pit/Peach Pit - Being So Normal/09 - Tommy's Party.flac"
+Jul 28 20:43 : player: played "Peach Pit/Peach Pit - Sweet FA/01 - Peach Pit.flac"
+Jul 28 20:46 : player: played "Peach Pit/Peach Pit - Sweet FA/02 - Seventeen.flac"
+Jul 28 20:50 : player: played "Peach Pit/Peach Pit - Sweet FA/03 - Drop the Guillotine.flac"
+Jul 28 20:54 : player: played "Peach Pit/Peach Pit - Sweet FA/04 - Sweet FA.flac"
+Jul 28 22:00 : player: played "Peach Pit/Peach Pit - You and Your Friends/01 - Feelin' Low (F_ckboy Blues).flac"
+Jul 29 11:55 : player: played "Peach Pit/Peach Pit - You and Your Friends/01 - Feelin' Low (F_ckboy Blues).flac"
+Jul 30 12:40 : player: played "Peach Pit/Peach Pit - You and Your Friends/01 - Feelin' Low (F_ckboy Blues).flac"
+Jul 30 16:10 : player: played "Ice Cube/Ice Cube - Lethal Injection/01 - The Shot (Remastered).flac"
+Jul 30 16:15 : player: played "Ice Cube/Ice Cube - Lethal Injection/02 - Really Doe (Remastered).flac"
+Jul 30 16:19 : player: played "Ice Cube/Ice Cube - Lethal Injection/03 - Ghetto Bird (Remastered).flac"
+Jul 30 16:22 : player: played "Ice Cube/Ice Cube - Lethal Injection/04 - You Know How We Do It.flac"
+Jul 30 16:27 : player: played "Ice Cube/Ice Cube - Lethal Injection/05 - Cave Bitch (Remastered).flac"
+Jul 30 21:56 : player: played "Ice Cube/Ice Cube - Lethal Injection/06 - Bop Gun (One Nation) (Remastered).flac"
+Aug 04 20:31 : player: played "guardin/guardin - lacuna/01 - just breathe.flac"
+Aug 04 20:34 : player: played "guardin/guardin - lacuna/02 - cold.flac"
+Aug 04 20:35 : player: played "guardin/guardin - lacuna/03 - alright.flac"
+Aug 04 20:38 : player: played "guardin/guardin - lacuna/04 - trapdoor.flac"
+Aug 04 20:39 : player: played "guardin/guardin - lacuna/05 - crazy.flac"
+Aug 04 20:41 : player: played "guardin/guardin - lacuna/06 - blue.flac"
+Aug 04 20:43 : player: played "guardin/guardin - lacuna/07 - nevermind.flac"
+Aug 04 20:46 : player: played "guardin/guardin - lacuna/08 - the viper.flac"
+Aug 04 20:49 : player: played "guardin/guardin - lacuna/09 - moonlight.flac"
+Aug 04 20:52 : player: played "guardin/guardin - lacuna/10 - downstairs.flac"
+Aug 04 20:56 : player: played "guardin/guardin - lacuna/11 - your escape.flac"
+Aug 04 20:58 : player: played "guardin/guardin - lacuna/12 - people.flac"
+Aug 04 20:59 : player: played "guardin/guardin - outsider/01 - outsider.flac"
+Aug 04 21:01 : player: played "guardin/guardin - outsider/02 - cliffnote.flac"
+Aug 04 21:04 : player: played "guardin/guardin - outsider/03 - forget it.flac"
+Aug 04 21:07 : player: played "guardin/guardin - outsider/04 - by the creek.flac"
+Aug 04 21:51 : player: played "J Balvin/J Balvin - Colores/01 - Amarillo.flac"
+Aug 04 21:55 : player: played "J Balvin/J Balvin - Colores/02 - Azul.flac"
+Aug 04 21:57 : player: played "J Balvin/J Balvin - Colores/03 - Rojo.flac"
+Aug 04 22:01 : player: played "J Balvin/J Balvin - Colores/04 - Rosa.flac"
+Aug 04 22:04 : player: played "J Balvin/J Balvin - Colores/05 - Morado.flac"
+Aug 04 23:14 : player: played "J Balvin/J Balvin - Colores/06 - Verde.flac"
+Aug 05 15:00 : player: played "J Balvin/J Balvin - Colores/06 - Verde.flac"
+Aug 05 15:03 : player: played "J Balvin/J Balvin - Colores/07 - Negro.flac"
+Aug 05 15:06 : player: played "J Balvin/J Balvin - Colores/08 - Gris.flac"
+Aug 05 15:09 : player: played "J Balvin/J Balvin - Colores/09 - Arcoíris.flac"
+Aug 05 15:11 : player: played "J Balvin/J Balvin - Colores/10 - Blanco.flac"
+Aug 05 15:14 : player: played "J Balvin/J Balvin - Energía/01 - Veneno.flac"
+Aug 05 15:17 : player: played "J Balvin/J Balvin - Energía/02 - Malvada.flac"
+Aug 05 15:20 : player: played "J Balvin/J Balvin - Energía/03 - Safari.flac"
+Aug 05 15:24 : player: played "J Balvin/J Balvin - Energía/04 - Bobo.flac"
+Aug 05 15:27 : player: played "J Balvin/J Balvin - Energía/05 - Sigo Extrañándote.flac"
+Aug 05 15:30 : player: played "J Balvin/J Balvin - Energía/06 - Primera Cita.flac"
+Aug 05 15:33 : player: played "J Balvin/J Balvin - Energía/07 - Pierde Los Modales.flac"
+Aug 05 15:37 : player: played "Sales/Sales - SALES - EP/01 - Renee.flac"
+Aug 05 15:40 : player: played "Sales/Sales - SALES - EP/02 - Vow.flac"
+Aug 05 15:43 : player: played "Sales/Sales - SALES - EP/03 - Chinese New Year.flac"
+Aug 05 15:46 : player: played "Sales/Sales - SALES - EP/04 - Getting It On.flac"
+Aug 05 15:48 : player: played "Sales/Sales - SALES - EP/05 - Toto.flac"
+Aug 05 15:51 : player: played "Sales/Sales - SALES - EP/06 - Toto (Xxyyxx Remix).flac"
+Aug 05 21:33 : player: played "salvia palth/salvia palth - melanchole/01 - i don't know anyone i am.flac"
+Aug 05 22:25 : player: played "salvia palth/salvia palth - melanchole/02 - stones pull out heart.flac"
+Aug 05 22:46 : player: played "salvia palth/salvia palth - melanchole/03 - i don't want to ask your father or anything.flac"
+Aug 06 16:36 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/01 - Missing.flac"
+Aug 06 16:38 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/02 - Give Me Something.flac"
+Aug 06 16:42 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/03 - Wildfire.flac"
+Aug 06 16:45 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/04 - Breathe.flac"
+Aug 06 17:04 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/05 - Oceans.flac"
+Aug 06 21:16 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/05 - Oceans.flac"
+Aug 06 21:20 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/06 - Over.flac"
+Aug 06 21:23 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/07 - Tell Me It's Real.flac"
+Aug 06 21:26 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/08 - Be There.flac"
+Aug 06 21:29 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/09 - Beauty on the Breeze.flac"
+Aug 06 21:32 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/10 - Atlantis.flac"
+Aug 06 21:36 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/11 - Skimming Stones.flac"
+Aug 06 21:40 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/12 - There's a Light.flac"
+Aug 06 21:43 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/13 - To the Sea.flac"
+Aug 06 21:46 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/14 - Out of Nowhere.flac"
+Aug 06 21:49 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/15 - Overtime.flac"
+Aug 06 21:52 : player: played "Seafret/Seafret - Tell Me It's Real (Expanded Edition)/16 - Oceans (BBC Live Version).flac"
+Aug 06 21:57 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/01 - Angel Of Death.flac"
+Aug 06 21:59 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/02 - Piece By Piece (Album Version).flac"
+Aug 06 22:01 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/03 - Necrophobic (Album Version).flac"
+Aug 06 22:04 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/04 - Altar Of Sacrifice (Album Version).flac"
+Aug 06 22:06 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/05 - Jesus Saves (Album Version).flac"
+Aug 06 22:09 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/06 - Criminally Insane (Album Version).flac"
+Aug 06 22:11 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/07 - Reborn (Album Version).flac"
+Aug 06 22:51 : player: played "Slayer/Slayer - Reign In Blood (Expanded)/08 - Epidemic (Album Version).flac"

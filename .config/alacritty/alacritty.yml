@@ -5,22 +5,22 @@ background_opacity: 0.7
 
 font:
   normal:
-    family: "MesloLGS NF"
+    family: "FiraCode Nerd Font"
     style: Regular
     size: 11
 
   bold:
-    family: "MesloLGS NF"
+    family: "FiraCode Nerd Font"
     style: Bold
     size: 11
 
   italic:
-    family: "MesloLGS NF"
+    family: "FiraCode Nerd Font"
     style: Italic
     size: 11
 
   bold_italic:
-    family: "MesloLGS NF"
+    family: "FiraCode Nerd Font"
     style: Bold Italic
     size: 11
 
