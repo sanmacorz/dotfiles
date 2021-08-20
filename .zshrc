@@ -29,14 +29,13 @@ alias cp="cp -i"
 alias ..="cd .."
 alias R="R --quiet"
 alias mapscii="telnet mapscii.me"
-
-
 alias code='codium'
+alias vim='nvim'
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias xampp-gui="cd /opt/lampp && sudo ./manager-linux-x64.run && cd"
 alias xampp-start="sudo /opt/lampp/lampp start"
 alias xampp-stop="sudo /opt/lampp/lampp stop"
-alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm"
+alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && pip-review --auto && cargo install-update -a && npm update"
 
 # Setting the history options
 HISTSIZE=10000

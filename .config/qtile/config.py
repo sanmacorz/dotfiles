@@ -1,3 +1,10 @@
+#        _   _ _
+#   __ _| |_(_) | ___
+#  / _` | __| | |/ _ \
+# | (_| | |_| | |  __/
+#  \__, |\__|_|_|\___|
+#     |_|
+
 import os
 import subprocess
 from pathlib import Path
@@ -90,7 +97,7 @@ keys = [
     Key([mod, "shift"], "c", lazy.window.kill()),
     Key([mod, "shift"], "q", lazy.spawn("rofi -show power-menu -modi power-menu:/home/santiago/.local/bin/rofi-power-menu")),
     Key(['shift'], 'Print', lazy.function(screenshot(selection=False, full=True))),
-    Key([mod, "control"], "l", lazy.spawn("dm-tool switch-to-greeter")),
+    Key([mod, "control"], "l", lazy.spawn("betterlockscreen -r 1920x1080 -b 0.5 -t 'Welcome back!' -tf '%I:%M %p' -l")),
     Key([mod, "control"], "r", lazy.restart()),
     Key([mod], "Return", lazy.spawn(terminal)),
     Key([mod], "Tab", lazy.next_layout()),
