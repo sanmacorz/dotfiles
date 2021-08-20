@@ -10,6 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
 export VISUAL=vim
+export ZDOTDIR="$HOME/.config/zsh/"
 
 # Initialize the starship prompt, and export the environment for the config file
 eval "$(starship init zsh)"
@@ -36,6 +37,7 @@ alias xampp-gui="cd /opt/lampp && sudo ./manager-linux-x64.run && cd"
 alias xampp-start="sudo /opt/lampp/lampp start"
 alias xampp-stop="sudo /opt/lampp/lampp stop"
 alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && pip-review --auto && cargo install-update -a && npm update"
+alias hi="echo "Hello""
 
 # Setting the history options
 HISTSIZE=10000
