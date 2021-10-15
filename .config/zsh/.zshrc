@@ -4,15 +4,15 @@
 #  / /\__ \ | | | | | (__
 # /___|___/_| |_|_|  \___|
 
-# Add to PATH
-export PATH="/home/santiago/.local/bin:/home/santiago/.emacs.d/bin:$PATH"
+# Setting paths with export
+export PATH="$PATH:/home/santiago/.local/bin:/home/santiago/.emacs.d/bin:/usr/google/appinventor/commands-for-Appinventor/:$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/go/bin:"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
 export VISUAL=vim
 export ZDOTDIR="$HOME/.config/zsh/"
 
-# Initialize the starship prompt, and export the environment for the config file
+# Initializing the starship prompt and setting the paths
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
@@ -36,8 +36,8 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias xampp-gui="cd /opt/lampp && sudo ./manager-linux-x64.run && cd"
 alias xampp-start="sudo /opt/lampp/lampp start"
 alias xampp-stop="sudo /opt/lampp/lampp stop"
-alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && pip-review --auto && cargo install-update -a && npm update"
-alias hi="echo "Hello""
+alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && sudo snap refresh && sudo flatpak update && pip-review --auto && cargo install-update -a && npm update"
+alias clean-cache="sudo rm -R /home/santiago/.cache && sudo rm -R /home/santiago/Pictures/Screenshots/* && sudo rm -R /var/cache && trash-empty"
 
 # Setting the history options
 HISTSIZE=10000
@@ -66,8 +66,16 @@ source /home/santiago/.config/zsh/zsh-history-substring-search/zsh-history-subst
 source /home/santiago/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/nvm/init-nvm.sh
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
+# Setting pyenv paths
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
+echo 'eval "$(pyenv init --path)"' >> ~/.profile
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+# Setting conda paths
 __conda_setup="$('/home/santiago/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -79,7 +87,6 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
 
-# Launch programs at startup
+# Launching programs at startup
 pfetch

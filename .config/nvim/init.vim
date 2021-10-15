@@ -21,14 +21,15 @@ call vundle#end()
 
 "" Set up basic configurations
 set nocompatible
-set expandtab
 set number
 set hlsearch
 set autoindent
-set shiftwidth=4
+set tabstop=8
+set shiftwidth=8
+set expandtab
 set encoding=utf-8
 filetype off
 filetype plugin indent on
 let g:airline_theme='simple'
 let g:airline_powerline_fonts = 1
-:nnoremap <C-F> :Files<CR>
+nnoremap <C-F> :Files<CR>

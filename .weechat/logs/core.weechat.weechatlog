@@ -112,3 +112,165 @@
 2021-06-29 18:29:00		  buflist
 2021-06-29 18:29:00		[spell]
 2021-06-29 18:29:00		  spell
+2021-08-21 13:32:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2021-08-21 13:32:43		[core]
+2021-08-21 13:32:43		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2021-08-21 13:32:43		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2021-08-21 13:32:43		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2021-08-21 13:32:43		[tcl]
+2021-08-21 13:32:43		  tcl
+2021-08-21 13:32:43		[relay]
+2021-08-21 13:32:43		  relay
+2021-08-21 13:32:43		[irc]
+2021-08-21 13:32:43		  admin       dcc         invite      map         op          rehash      service     unban       whois     
+2021-08-21 13:32:43		  allchan     dehalfop    ison        me          oper        remove      servlist    unquiet     whowas    
+2021-08-21 13:32:43		  allpv       deop        join        mode        part        restart     squery      userhost  
+2021-08-21 13:32:43		  allserv     devoice     kick        motd        ping        sajoin      squit       users     
+2021-08-21 13:32:43		  ban         die         kickban     msg         pong        samode      stats       version   
+2021-08-21 13:32:43		  cap         disconnect  kill        names       query       sanick      summon      voice     
+2021-08-21 13:32:43		  connect     halfop      links       nick        quiet       sapart      time        wallchops 
+2021-08-21 13:32:43		  ctcp        ignore      list        notice      quote       saquit      topic       wallops   
+2021-08-21 13:32:43		  cycle       info        lusers      notify      reconnect   server      trace       who       
+2021-08-21 13:32:43		[perl]
+2021-08-21 13:32:43		  perl
+2021-08-21 13:32:43		[trigger]
+2021-08-21 13:32:43		  trigger
+2021-08-21 13:32:43		[python]
+2021-08-21 13:32:43		  python
+2021-08-21 13:32:43		[xfer]
+2021-08-21 13:32:43		  me  xfer
+2021-08-21 13:32:43		[guile]
+2021-08-21 13:32:43		  guile
+2021-08-21 13:32:43		[lua]
+2021-08-21 13:32:43		  lua
+2021-08-21 13:32:43		[charset]
+2021-08-21 13:32:43		  charset
+2021-08-21 13:32:43		[logger]
+2021-08-21 13:32:43		  logger
+2021-08-21 13:32:43		[exec]
+2021-08-21 13:32:43		  exec
+2021-08-21 13:32:43		[ruby]
+2021-08-21 13:32:43		  ruby
+2021-08-21 13:32:43		[fifo]
+2021-08-21 13:32:43		  fifo
+2021-08-21 13:32:43		[alias]
+2021-08-21 13:32:43		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2021-08-21 13:32:43		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2021-08-21 13:32:43		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2021-08-21 13:32:43		[fset]
+2021-08-21 13:32:43		  fset
+2021-08-21 13:32:43		[buflist]
+2021-08-21 13:32:43		  buflist
+2021-08-21 13:32:43		[script]
+2021-08-21 13:32:43		  script
+2021-08-21 14:22:29	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2021-08-21 14:22:37	=!=	Unknown command "/irc" (type /help for help)
+2021-08-21 14:22:44		Buffers list:
+2021-08-21 14:22:44		  [1] core.weechat (notify: all)
+2021-08-21 14:23:22		fifo: pipe closed
+2021-08-21 14:24:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2021-08-21 14:24:08	=!=	No help available, "irc.server.libera.autoconnect" is not a command or an option
+2021-08-21 14:24:16		irc: server added: libera
+2021-08-21 14:24:44	=!=	Option "weechat.network.gnutls_ca_file" not found
+2021-08-21 14:24:49	=!=	Option "weechat.network.gnutls_ca_file" not found
+2021-08-21 14:25:03		Upgrading WeeChat with binary file: "weechat"...
+2021-08-21 14:25:03		fifo: pipe closed
+2021-08-21 14:25:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2021-08-21 14:25:03		Upgrade done (0.09s)
+2021-08-21 14:25:39	=!=	No help available, "nickname" is not a command or an option
+2021-08-21 14:25:43	=!=	Unknown command "/nickname" (type /help for help)
+2021-08-21 14:25:56		[core]  /set  [<option> [<value>]]
+2021-08-21 14:25:56		              diff [<option> [<option>...]]
+2021-08-21 14:25:56		              env [<variable> [<value>]]
+2021-08-21 14:25:56		set config options and environment variables
+2021-08-21 14:25:56		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2021-08-21 14:25:56		 value: new value for option, according to type:
+2021-08-21 14:25:56		          boolean: on, off or toggle
+2021-08-21 14:25:56		          integer: number, ++number or --number
+2021-08-21 14:25:56		           string: any string ("" for empty string)
+2021-08-21 14:25:56		            color: color name, ++number or --number
+2021-08-21 14:25:56		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2021-08-21 14:25:56		  diff: display only changed options
+2021-08-21 14:25:56		   env: display or set an environment variable (use value "" to unset a variable)
+2021-08-21 14:25:56		Examples:
+2021-08-21 14:25:56		  display options about highlight:
+2021-08-21 14:25:56		    /set *highlight*
+2021-08-21 14:25:56		  add a word to highlight:
+2021-08-21 14:25:56		    /set weechat.look.highlight "word"
+2021-08-21 14:25:56		  display changed options:
+2021-08-21 14:25:56		    /set diff
+2021-08-21 14:25:56		  display changed options in irc plugin:
+2021-08-21 14:25:56		    /set diff irc.*
+2021-08-21 14:25:56		  display value of environment variable LANG:
+2021-08-21 14:25:56		    /set env LANG
+2021-08-21 14:25:56		  set environment variable LANG and use it:
+2021-08-21 14:25:56		    /set env LANG fr_FR.UTF-8
+2021-08-21 14:25:56		    /upgrade
+2021-08-21 14:25:56		  unset environment variable ABC:
+2021-08-21 14:25:56		    /set env ABC ""
+2021-08-21 14:26:34	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2021-08-21 14:26:42	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2021-08-21 14:27:51	=!=	Unknown command "/irc.server_default.nicks" (type /help for help)
+2021-08-21 14:28:21		fifo: pipe closed
+2021-08-21 14:29:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2021-08-21 14:30:37	=!=	irc: unable to add temporary server "#archlinux" because the addition of temporary servers with command /connect is currently disabled
+2021-08-21 14:30:37	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2021-08-21 14:33:35		[core]
+2021-08-21 14:33:35		  away     command  filter   key      plugin   reload   set      version
+2021-08-21 14:33:35		  bar      cursor   help     layout   print    repeat   unset    wait   
+2021-08-21 14:33:35		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2021-08-21 14:33:35		  color    eval     input    mute     quit     secure   uptime 
+2021-08-21 14:33:35		[tcl]
+2021-08-21 14:33:35		  tcl
+2021-08-21 14:33:35		[relay]
+2021-08-21 14:33:35		  relay
+2021-08-21 14:33:35		[irc]
+2021-08-21 14:33:35		  admin       die         lusers      ping        saquit      userhost  
+2021-08-21 14:33:35		  allchan     disconnect  map         pong        server      users     
+2021-08-21 14:33:35		  allpv       halfop      me          query       service     version   
+2021-08-21 14:33:35		  allserv     ignore      mode        quiet       servlist    voice     
+2021-08-21 14:33:35		  ban         info        motd        quote       squery      wallchops 
+2021-08-21 14:33:35		  cap         invite      msg         reconnect   squit       wallops   
+2021-08-21 14:33:35		  connect     ison        names       rehash      stats       who       
+2021-08-21 14:33:35		  ctcp        join        nick        remove      summon      whois     
+2021-08-21 14:33:35		  cycle       kick        notice      restart     time        whowas    
+2021-08-21 14:33:35		  dcc         kickban     notify      sajoin      topic     
+2021-08-21 14:33:35		  dehalfop    kill        op          samode      trace     
+2021-08-21 14:33:35		  deop        links       oper        sanick      unban     
+2021-08-21 14:33:35		  devoice     list        part        sapart      unquiet   
+2021-08-21 14:33:35		[perl]
+2021-08-21 14:33:35		  perl
+2021-08-21 14:33:35		[trigger]
+2021-08-21 14:33:35		  trigger
+2021-08-21 14:33:35		[python]
+2021-08-21 14:33:35		  python
+2021-08-21 14:33:35		[xfer]
+2021-08-21 14:33:35		  me  xfer
+2021-08-21 14:33:35		[guile]
+2021-08-21 14:33:35		  guile
+2021-08-21 14:33:35		[lua]
+2021-08-21 14:33:35		  lua
+2021-08-21 14:33:35		[charset]
+2021-08-21 14:33:35		  charset
+2021-08-21 14:33:35		[logger]
+2021-08-21 14:33:35		  logger
+2021-08-21 14:33:35		[exec]
+2021-08-21 14:33:35		  exec
+2021-08-21 14:33:35		[ruby]
+2021-08-21 14:33:35		  ruby
+2021-08-21 14:33:35		[fifo]
+2021-08-21 14:33:35		  fifo
+2021-08-21 14:33:35		[alias]
+2021-08-21 14:33:35		  AAWAY    BYE      CLOSE    K        MSGBUF   REDRAW   UB       WC       WW     
+2021-08-21 14:33:35		  alias    C        EXIT     KB       MUB      SAY      UMODE    WI     
+2021-08-21 14:33:35		  ANICK    CHAT     IG       LEAVE    N        SIGNOFF  V        WII    
+2021-08-21 14:33:35		  BEEP     CL       J        M        Q        T        W        WM     
+2021-08-21 14:33:35		[fset]
+2021-08-21 14:33:35		  fset
+2021-08-21 14:33:35		[buflist]
+2021-08-21 14:33:35		  buflist
+2021-08-21 14:33:35		[script]
+2021-08-21 14:33:35		  script
+2021-08-21 14:34:00	=!=	WeeChat main buffer can't be closed
+2021-08-21 14:34:02	=!=	WeeChat main buffer can't be closed
+2021-08-21 14:34:07		fifo: pipe closed

@@ -1,0 +1,11 @@
+2021-08-21 14:32:28	-->	sanmacorz (~santiago@45.173.69.131) has joined #archlinux
+2021-08-21 14:32:28	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://coc.archlinux.org | Pastebins: !paste | Down? https://status.archlinux.org"
+2021-08-21 14:32:28	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/Namarrgon) on Wed, 09 Jun 2021 05:27:05
+2021-08-21 14:32:28	--	Channel #archlinux: 1277 nicks (0 ops, 0 voices, 1277 normals)
+2021-08-21 14:32:31	--	Channel created on Wed, 19 May 2021 07:12:33
+2021-08-21 14:32:42	damarusama	but I haven't -Syu in a couple weeks, it's pretty doubtful
+2021-08-21 14:32:43	<--	mei (~mei@user/mei) has quit (Ping timeout: 252 seconds)
+2021-08-21 14:32:52	sheep	maybe your mirror is outdated
+2021-08-21 14:33:10	damarusama	something wrong for sure, I'll check the mirror list - can I do it from pacman / 
+2021-08-21 14:33:13	damarusama	?
+2021-08-21 14:33:33	sheep	https://archlinux.org/mirrors/status/

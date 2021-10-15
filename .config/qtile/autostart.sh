@@ -4,6 +4,7 @@ picom --experimental-backend &
 dunst &
 redshift &
 lxsession &
-volumeicon &
+optimus-manager-qt &
 nm-applet &
+volumeicon &
 blueman-applet &
