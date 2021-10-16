@@ -4,7 +4,7 @@
 "" | | | |  __/ (_) \ V /| | | | | | | | | (__
 "" |_| |_|\___|\___/ \_/ |_|_| |_| |_|_|  \___|
 
-"" Set up plugin manager Vundle
+"" Setting up plugin manager
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=/usr/bin/fzf
 call vundle#begin()
@@ -19,7 +19,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'xuhdev/vim-latex-live-preview'
 call vundle#end()
 
-"" Set up basic configurations
+"" Setting up basic configurations
 set nocompatible
 set number
 set hlsearch
