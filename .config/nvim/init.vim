@@ -16,6 +16,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'codota/tabnine-vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'valloric/youcompleteme'
+Plugin 'honza/vim-snippets'
 Plugin 'xuhdev/vim-latex-live-preview'
 call vundle#end()
 

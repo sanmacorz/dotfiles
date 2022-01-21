@@ -1,4 +1,4 @@
-https://www.nytimes.com/section/world/rss.xml
+https://rss.nytimes.com/services/xml/rss/nyt/World.xml
 https://feeds.bbci.co.uk/news/world/rss.xml
 https://feeds.a.dj.com/rss/RSSWorldNews.xml
 https://www.reddit.com/r/worldnews.rss
@@ -22,6 +22,7 @@ https://null-byte.wonderhowto.com/rss.xml
 https://static.fsf.org/fsforg/rss/news.xml
 https://www.eff.org/rss/updates.xml
 https://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss
+https://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=400
 https://www.debian.org/News/news
 https://www.mintic.gov.co/portal/604/rss3-propertyvalue-596.rss
 https://sfconservancy.org/feeds/omnibus/
@@ -30,3 +31,4 @@ https://nextcloud.com/blog/static-feed/
 https://krebsonsecurity.com/feed/
 https://based.cooking/rss.xml
 https://www.vice.com/en/rss/section/tech?locale=en_us
+https://www.wired.com/feed/rss

@@ -5,11 +5,11 @@
 # /___|___/_| |_|_|  \___|
 
 # Setting paths with export
-export PATH="$PATH:/home/santiago/.local/bin:/home/santiago/.emacs.d/bin:/usr/google/appinventor/commands-for-Appinventor/:$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/go/bin:"
+export PATH="$PATH:/home/santiago/.local/bin:/home/santiago/.emacs.d/bin:/usr/google/appinventor/commands-for-Appinventor/:$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/go/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
-export HISTCONTROL=ignoreboth
 export VISUAL=vim
+export HISTCONTROL=ignoreboth
 export ZDOTDIR="$HOME/.config/zsh/"
 
 # Initializing the starship prompt and setting the paths
@@ -23,7 +23,6 @@ alias ls="exa -al --color=always --group-directories-first"
 alias cat="bat"
 alias grep="rg"
 alias find="fd"
-alias ps="procs"
 alias mv="mv -i"
 alias rm="rm -i"
 alias cp="cp -i"
@@ -32,11 +31,12 @@ alias R="R --quiet"
 alias mapscii="telnet mapscii.me"
 alias code='codium'
 alias vim='nvim'
+alias ed="ed -p ':' -v"
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias xampp-gui="cd /opt/lampp && sudo ./manager-linux-x64.run && cd"
 alias xampp-start="sudo /opt/lampp/lampp start"
 alias xampp-stop="sudo /opt/lampp/lampp stop"
-alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && sudo snap refresh && sudo flatpak update && pip-review --auto && cargo install-update -a && npm update"
+alias update="sudo pacman -Syyuu --noconfirm && yay -Syyuu --noconfirm && sudo snap refresh && sudo flatpak update && pip-review --auto && cargo install-update -a && npm update && sudo gem update"
 alias clean-cache="sudo rm -R /home/santiago/.cache && sudo rm -R /home/santiago/Pictures/Screenshots/* && sudo rm -R /var/cache && trash-empty"
 
 # Setting the history options
@@ -67,13 +67,14 @@ source /home/santiago/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlightin
 source /usr/share/nvm/init-nvm.sh
 
 # Setting pyenv paths
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
-echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
-echo 'eval "$(pyenv init --path)"' >> ~/.profile
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
+# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
+# echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
+# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
+# echo 'eval "$(pyenv init --path)"' >> ~/.profile
+# echo 'eval "$(pyenv init -)"' >> ~/.config/zsh/.zshrc
+# eval "$(pyenv init -)"
 
 # Setting conda paths
 __conda_setup="$('/home/santiago/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -90,3 +91,9 @@ unset __conda_setup
 
 # Launching programs at startup
 pfetch
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# RVM bash completion
+[[ -r "$HOME/.rvm/scripts/completion" ]] && source "$HOME/.rvm/scripts/completion"

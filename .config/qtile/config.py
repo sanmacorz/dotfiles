@@ -124,7 +124,7 @@ layout_theme = {"border_width": 3,
 layouts = [
     layout.Tile(**layout_theme, ratio=0.5),
     layout.Max(**layout_theme),
-    layout.Floating(**layout_theme)
+#   layout.Floating(**layout_theme)
 ]
 
 widget_defaults = dict(

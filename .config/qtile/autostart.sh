@@ -1,9 +1,10 @@
 #!/bin/sh
 nitrogen --restore &
-picom --experimental-backend &
+picom &
+# lxsession &
 dunst &
 redshift &
-lxsession &
+conky &
 optimus-manager-qt &
 nm-applet &
 volumeicon &
