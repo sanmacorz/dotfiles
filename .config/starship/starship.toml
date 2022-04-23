@@ -4,3 +4,7 @@ add_newline = true
 # Disable the package module, hiding it from the prompt completely
 [line_break]
 disabled = true
+
+# Disable the package module for AWS
+[aws]
+disabled = true
